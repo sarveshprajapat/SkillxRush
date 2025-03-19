@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Fundamentals Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Full Stack Fundamentals Course</h1>
+        <p>Learn the core concepts of full-stack development, including frontend and backend technologies!</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Introduction to Full Stack Development</h2>
+            <p>Full Stack Development involves both frontend and backend development. In this course, we'll cover:</p>
+            <ul>
+                <li>Frontend Basics: HTML, CSS, JavaScript</li>
+                <li>Backend Basics: Node.js, Express.js, Databases</li>
+                <li>Connecting Frontend and Backend</li>
+                <li>Building Full-Stack Applications</li>
+            </ul>
+        </section>
+
+        <section id="frontend">
+            <h2>Frontend Fundamentals</h2>
+            <h3>HTML: The Structure of the Web</h3>
+            <p>HTML is used to create the structure of web pages. You'll learn how to build the basic skeleton of any website.</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <h3>CSS: Styling the Web</h3>
+            <p>CSS is used to style the HTML structure. You'll learn how to position and color elements to create beautiful web pages.</p>
+            <pre>
+h1 {
+    color: blue;
+    text-align: center;
+}
+            </pre>
+            <h3>JavaScript: Making the Web Interactive</h3>
+            <p>JavaScript adds functionality to your website. You'll learn how to interact with the DOM and handle user input.</p>
+            <pre>
+document.getElementById("myButton").onclick = function() {
+    alert("Button Clicked!");
+};
+            </pre>
+        </section>
+
+        <section id="backend">
+            <h2>Backend Fundamentals</h2>
+            <h3>Node.js: JavaScript on the Server</h3>
+            <p>Node.js allows you to run JavaScript on the server. You'll learn how to set up a basic server with Node.js.</p>
+            <pre>
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.write('Hello from the server!');
+    res.end();
+});
+
+server.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+            </pre>
+            <h3>Express.js: Simplifying Server-Side Development</h3>
+            <p>Express.js is a framework for Node.js that makes it easier to handle routes, requests, and responses.</p>
+            <pre>
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+            </pre>
+            <h3>Databases: Storing Data</h3>
+            <p>Learn how to store and retrieve data from a database. We'll cover SQL (MySQL) and NoSQL (MongoDB) databases.</p>
+            <h4>Example with MongoDB</h4>
+            <pre>
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('Could not connect to MongoDB:', err));
+            </pre>
+        </section>
+
+        <section id="connecting">
+            <h2>Connecting Frontend and Backend</h2>
+            <p>Now that you have a basic understanding of frontend and backend development, you'll learn how to connect them:</p>
+            <ul>
+                <li>Creating APIs with Express.js</li>
+                <li>Sending and receiving data with AJAX and Fetch API</li>
+                <li>Handling form submissions</li>
+            </ul>
+            <h4>Example of sending data to backend using Fetch:</h4>
+            <pre>
+fetch('http://localhost:3000/submit', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name: 'John', age: 30 })
+})
+.then(response => response.json())
+.then(data => console.log(data));
+            </pre>
+        </section>
+
+        <section id="project">
+            <h2>Building a Full-Stack Application</h2>
+            <p>Now, it's time to combine everything you've learned and build a full-stack application. Here's a brief outline:</p>
+            <ul>
+                <li>Frontend: Create the user interface using HTML, CSS, and JavaScript.</li>
+                <li>Backend: Set up a server using Node.js and Express.js to handle requests.</li>
+                <li>Database: Store and retrieve data from a database like MongoDB.</li>
+                <li>Connect: Use AJAX/Fetch API to communicate between frontend and backend.</li>
+            </ul>
+            <p>By the end of this project, you'll have a fully functional web application!</p>
+        </section>
+        <button id="sendRequestButton">Simulate Backend Request</button>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Congratulations! You've learned the fundamentals of full-stack development. Keep building and experimenting with real projects, and you'll be ready for more advanced topics like authentication, deployment, and working with frameworks like React and Angular.</p>
+        </section>
+    </main>
+    <section>
+        <a href="javascript:history.back()" class="back-button">Back</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 SkillxRush | Full Stack Fundamentals Course</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithmic Tracking - Interactive Course</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Algorithmic Tracking Course!</h1>
+        <p>Learn the basics of algorithmic tracking using JavaScript and HTML</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Introduction to Algorithmic Tracking</h2>
+            <p>
+                Algorithmic tracking is a process that allows software to follow and monitor objects over time.
+                In this course, we'll focus on using simple algorithms and JavaScript to track objects on a screen.
+            </p>
+        </section>
+
+        <section id="concepts">
+            <h2>Key Concepts</h2>
+            <ul>
+                <li><strong>Object Detection:</strong> Identifying an object to track.</li>
+                <li><strong>Tracking Algorithms:</strong> Methods used to follow the object.</li>
+                <li><strong>Real-Time Processing:</strong> Continuously updating the position of the object.</li>
+            </ul>
+        </section>
+
+        <section id="interactive">
+            <h2>Interactive Demo: Object Tracking Simulation</h2>
+            <p>Click and drag the red box to track the object on the screen.</p>
+            <div id="tracking-demo">
+                <div id="trackable-object"></div>
+            </div>
+            <button onclick="startTracking()">Start Tracking</button>
+        </section>
+
+        <section id="algorithm">
+            <h2>Algorithm Explanation</h2>
+            <p>We will simulate basic tracking using JavaScript. Here's how it works:</p>
+            <pre>
+                1. Detect an object on the screen (we use a red box for simplicity).
+                2. Track the object by following its position while it moves.
+                3. Update the display and track the object's new location.
+            </pre>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>You've learned how object tracking algorithms can work using simple code in JavaScript and HTML. In future lessons, you can explore more advanced tracking techniques using machine learning or specialized libraries like OpenCV.</p>
+        </section>
+    </main>
+    <section>
+        <a href="javascript:history.back()" class="back-button">Back</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 SkillxRush | Algorithmic Tracking Course</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillxRush</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SkillxRush</h1>
+        </header>
+
+        <section class="user-info">
+            <div class="user-progress">
+                <h2>Your Total Points</h2>
+                <div id="total-points" class="points">0</div>
+            </div>
+        </section>
+
+        <section class="lesson-list">
+            <h2>Available Lessons</h2>
+            <div class="lesson" onclick="completeLesson(10)">
+                <h3>Lesson 1: Introduction to Programming</h3>
+                <a href="course1.html">FOR "Introduction to Programming" Click Here</a>
+                <p>Points: 10</p>
+            </div>
+
+            <div class="lesson" onclick="completeLesson(20)">
+                <h3>Lesson 2: Basic Syntax</h3>
+                <a href="course2.html">FOR "Basic Syntax" Click Here</a>
+                <p>Points: 20</p>
+            </div>
+
+            <div class="lesson" onclick="completeLesson(30)">
+                <h3>Lesson 3: Advanced Concepts</h3>
+                <a href="course3.html">FOR "Advance Concepts" Click Here</a>
+                <p>Points: 30</p>
+            </div>
+
+            <div class="lesson" onclick="completeLesson(40)">
+                <h3>Lesson 4:Algorithmic Tracking </h3>
+                <a href="course4.html">FOR "Algorithmic Tracking" Click Here</a>
+                <p>Points: 40</p>
+            </div>
+            
+            <div class="lesson" onclick="completeLesson(50)">
+                <h3>Lesson 5:Fullstack Fundamentals</h3>
+                <a href="course5.html">FOR "Fullstack Fundamentals" Click Here</a>
+                <p>Points: 50</p>
+            </div>
+            <div class="lesson" onclick="completeLesson(0)">
+                <h3>Number Guessing Game</h3>
+                <a href="game1.html">Click Here to Play</a>
+            </div>
+            <div class="lesson" onclick="completeLesson(0)">
+                <h3>rock/Paper/Scissor</h3>
+                <a href="game2.html">Click Here to Play</a>
+            </div>
+        </section>
+
+        <section id="message" class="message">
+            <p>Click a lesson to start learning!</p>
+        </section>
+
+        <!-- Refresh Button -->
+        <section class="refresh-button">
+            <button onclick="refreshPage()">Refresh</button>
+        </section>
+
+        <section>
+            <a href="javascript:history.back()" class="back-button">Back</a>
+        </section>
+    
+        <section>
+            <a href="javascript:history.back()" class="submit-button">Submit</a>
+        </section>
+
+        <footer>
+            <p>2025 © SkillxRush. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

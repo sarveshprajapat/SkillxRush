@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Syntax Course</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 16px 30px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            max-width: 1000px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        section p, section ul, section ol {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        section ul, section ol {
+            margin-left: 20px;
+        }
+
+        section ul li, section ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Back Button Styling */
+        .back-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #575757;
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            .back-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Basic Syntax in Programming</h1>
+        <p>Learn the fundamental syntax used in programming languages like Python, JavaScript, C++, and more.</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#variables">Variables</a>
+        <a href="#data-types">Data Types</a>
+        <a href="#operators">Operators</a>
+        <a href="#control-structures">Control Structures</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction to Basic Syntax</h2>
+        <p>Understanding the basic syntax is crucial for learning how to write code effectively. In this section, we'll go over how syntax works in programming, and how it varies between different programming languages. This includes rules for naming variables, using operators, and writing statements.</p>
+    </section>
+
+    <section id="variables">
+        <h2>Variables</h2>
+        <p>Variables are used to store data that can be used and manipulated in a program. Here's an example of how to declare variables in different programming languages:</p>
+        <ul>
+            <li><strong>Python:</strong> <code>my_variable = 10</code></li>
+            <li><strong>JavaScript:</strong> <code>let myVariable = 10;</code></li>
+            <li><strong>C++:</strong> <code>int myVariable = 10;</code></li>
+        </ul>
+    </section>
+
+    <section id="data-types">
+        <h2>Data Types</h2>
+        <p>Data types define what kind of data a variable can hold. Common data types include:</p>
+        <ul>
+            <li><strong>Integer:</strong> Whole numbers (e.g., 10, 42)</li>
+            <li><strong>Float:</strong> Decimal numbers (e.g., 3.14, 99.9)</li>
+            <li><strong>String:</strong> Text data (e.g., "Hello, World!")</li>
+            <li><strong>Boolean:</strong> True or False values</li>
+        </ul>
+    </section>
+
+    <section id="operators">
+        <h2>Operators</h2>
+        <p>Operators allow you to perform operations on variables and values. Some common operators are:</p>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong> +, -, *, /, %</li>
+            <li><strong>Comparison Operators:</strong> ==, !=, >, <, >=, <=</li>
+            <li><strong>Logical Operators:</strong> && (AND), || (OR), ! (NOT)</li>
+        </ul>
+    </section>
+
+    <section id="control-structures">
+        <h2>Control Structures</h2>
+        <p>Control structures dictate the flow of a program. The most common control structures are:</p>
+        <ul>
+            <li><strong>If Statements:</strong> Execute a block of code based on a condition.</li>
+            <li><strong>Loops:</strong> Repeatedly execute a block of code (for, while).</li>
+            <li><strong>Switch Statements:</strong> Choose between multiple options based on a variable.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Here are some helpful resources to further your learning on basic syntax:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Programming Tutorials</a></li>
+            <li><a href="https://www.learn-js.org" target="_blank">Learn JavaScript - Interactive Tutorials</a></li>
+            <li><a href="https://www.codecademy.com" target="_blank">Codecademy - Online Learning Platform</a></li>
+        </ul>
+    </section>
+
+    <!-- Back Button -->
+    <section>
+        <a href="javascript:history.back()" class="back-button">Back</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SkillxRush . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

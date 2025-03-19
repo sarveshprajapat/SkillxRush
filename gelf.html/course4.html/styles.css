@@ -1,0 +1,72 @@
+/* Basic styles for the course page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+/* Back Button Styling */
+.back-button {
+    background-color: #2883a7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}
+/* Styling the interactive demo */
+#tracking-demo {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    position: relative;
+}
+
+#trackable-object {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+}
